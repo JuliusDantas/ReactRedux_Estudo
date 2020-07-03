@@ -18,7 +18,7 @@ strong {
     padding: 15px;
 }
 
-.WithParameter{
+.withparameter {
     border-radius: 15px;
     border-width: 5px;
     background-color: green;
@@ -27,7 +27,7 @@ strong {
     border-style: dotted;
 }
 
-.Fragment{
+.fragment {
     border-radius: 15px;
     border-width: 5px;
     background-color: #ff6f00;
@@ -36,7 +36,9 @@ strong {
     border-style: dotted;
 }
 
+
 /* max-width  */
+
 @media screen and (max-width: 600px) {
     .first {
         background-color: #F9C;
@@ -44,19 +46,16 @@ strong {
         padding: 5px;
         font-family: sans-serif;
     }
-
-    .WithParameter {
+    .withparameter {
         background-color: #dd2c00;
         color: #f3f3f3;
         padding: 5px;
     }
-
-    .Fragment {
+    .fragment {
         background-color: #ffab00;
         color: #f3f3f3;
         padding: 5px;
     }
-
     span.lt600 {
         display: inline-block;
     }
