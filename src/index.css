@@ -1,0 +1,63 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+strong {
+    background-color: azure;
+    color: #000;
+}
+
+.first {
+    border-radius: 15px;
+    border-width: 5px;
+    border-color: #fff;
+    background-color: blue;
+    text-align: center;
+    padding: 15px;
+}
+
+.WithParameter{
+    border-radius: 15px;
+    border-width: 5px;
+    background-color: green;
+    text-align: center;
+    padding: 15px;
+    border-style: dotted;
+}
+
+.Fragment{
+    border-radius: 15px;
+    border-width: 5px;
+    background-color: #ff6f00;
+    text-align: center;
+    padding: 15px;
+    border-style: dotted;
+}
+
+/* max-width  */
+@media screen and (max-width: 600px) {
+    .first {
+        background-color: #F9C;
+        color: #f3f3f3;
+        padding: 5px;
+        font-family: sans-serif;
+    }
+
+    .WithParameter {
+        background-color: #dd2c00;
+        color: #f3f3f3;
+        padding: 5px;
+    }
+
+    .Fragment {
+        background-color: #ffab00;
+        color: #f3f3f3;
+        padding: 5px;
+    }
+
+    span.lt600 {
+        display: inline-block;
+    }
+}
