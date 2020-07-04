@@ -1,0 +1,23 @@
+.card{
+    background-color: #1a237e;
+    border: 3px solid #1a237e;
+    color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.card .title{
+   padding: 20px 0px 20px 10px;
+   justify-content: center;
+   text-justify: auto;
+   font-size: x-large;
+
+}
+
+.card .content{
+    background-color: #1e88e5;
+    padding: 10px 0px 10px 20px;
+    
+
+}
