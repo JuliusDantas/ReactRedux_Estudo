@@ -12,7 +12,7 @@ export default _ =>
     <div className="app">
         <h1>Fundamentos React 2</h1>
 
-        <div className="Geral">
+        <div className="geral">
             <Card titulo="Desafio Aleatório">
                 <Random min={1} max={60} />
             </Card>
@@ -27,14 +27,7 @@ export default _ =>
                     aluno="Julius Dantas"
                     nota={9.1} />
 
-                <WithParameter
-                    titulo="Situação do Aluno"
-                    aluno="José Carlos"
-                    nota={9.3} />
-                <WithParameter
-                    titulo="Situação do Aluno"
-                    aluno="Antonio Santos"
-                    nota={5.9} />
+                
             </Card>
 
             <Card titulo="Primeiro Componente">
