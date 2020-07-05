@@ -1,6 +1,8 @@
 import './App.css'
 import React from 'react'
 
+import Family from './basic/Family'
+import FamilyMember from './basic/FamilyMember'
 import First from './basic/First'
 import WithParameter from './basic/WithParameter'
 import Fragment from './basic/Fragment'
@@ -13,8 +15,17 @@ export default _ =>
         <h1>Fundamentos React 2</h1>
 
         <div className="geral">
-            <Card titulo="Desafio Aleatório">
-                <Random min={1} max={60} />
+            <Card titulo="Componente com Filhos" color="#004d40">
+                <Family sname="Dantas">
+                    <FamilyMember name="Julius"/>
+                    <FamilyMember name="Maria" />
+                    <FamilyMember name="Henrique" sname="Cardoso"/>
+        
+                </Family>
+            </Card>
+
+            <Card titulo="Desafio Aleatório" color="#004d40">
+                <Random min={1} max={60} colorBody="#4db6ac"></Random>
             </Card>
 
             <Card titulo="Fragmentos">
