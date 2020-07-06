@@ -1,6 +1,8 @@
 import './App.css'
 import React from 'react'
 
+import ProductTable from './repetition/ProductTable'
+import StudentList from './repetition/StudentList'
 import Family from './basic/Family'
 import FamilyMember from './basic/FamilyMember'
 import First from './basic/First'
@@ -15,6 +17,12 @@ export default _ =>
         <h1>Fundamentos React 2</h1>
 
         <div className="geral">
+            <Card titulo="Tabela Preço Produtos">
+                <ProductTable />
+            </Card>
+            <Card titulo="Repetição">
+                <StudentList />
+            </Card>
             <Card titulo="Componente com Filhos" color="#004d40">
                 <Family sname="Dantas">
                     <FamilyMember name="Julius"/>
