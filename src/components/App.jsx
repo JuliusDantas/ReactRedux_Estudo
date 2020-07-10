@@ -10,6 +10,8 @@ import WithParameter from './basic/WithParameter'
 import Fragment from './basic/Fragment'
 import Random from './basic/Random'
 import Card from './Layout/Card'
+import Form from './Layout/Form'
+import FormPerfil from './Layout/FormPerfil'
 
 export default _ =>
 
@@ -17,6 +19,12 @@ export default _ =>
         <h1>Fundamentos React 2</h1>
 
         <div className="geral">
+            <Card titulo="Formulário de Perfil">
+                <FormPerfil />
+            </Card>
+            <Card titulo="Exemplo Formulário">
+                <Form />
+            </Card>
             <Card titulo="Tabela Preço Produtos">
                 <ProductTable />
             </Card>

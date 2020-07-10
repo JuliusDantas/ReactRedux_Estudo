@@ -1,9 +1,11 @@
 import './Card.css'
+import '@material-ui/core/Button/Button.js'
 import React from 'react'
 
 import Button from '@material-ui/core/Button';
-import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
+import { createStyles, makeStyles, useTheme } from '@material-ui/core/styles';
 import SaveIcon from '@material-ui/core/IconButton/IconButton'
+import Menu from './Menu'
 
 export default props => {
 
@@ -12,7 +14,9 @@ export default props => {
         borderColor: props.color || '#795548'
     }
 
-    const useStyles = makeStyles((theme: Theme) =>
+    const theme = useTheme();
+    
+    const useStyles = makeStyles((theme) =>
   createStyles({
     button: {
       margin: theme.spacing(1),
@@ -21,11 +25,13 @@ export default props => {
 );
 
 
-  const classes = useStyles();
+  const classes = useStyles(theme);
 
     return (
         <div className="card" style={estilo}>
-            <div className="title">{props.titulo}</div>
+            <div className="title">{props.titulo}
+              <Menu />
+            </div>
             <div className="content">
                 {props.children}
             </div>
