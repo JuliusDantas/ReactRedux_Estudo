@@ -30,4 +30,150 @@
 .btn {
     margin-top: 3px;
     padding: 5px;
+    align-content: center;
+}
+
+.root{
+    display: 'flex';
+    flex-Wrap: 'wrap';
+    flex-direction: column;
+    
+}
+.root .margin{
+    margin: 5px;
+    
+}
+
+.root .nome{
+    width: 415px;
+    margin: 5px;
+}
+
+.root .perfil{
+    width: 200px;
+    margin: 5px;
+}
+
+.orgao{
+    width: 200px;
+    margin: 5px;
+}
+
+.container{
+    display: 'flex';
+    flex-wrap: 'wrap';
+}
+.textField{
+    margin-Left: 5px;
+    margin-Right: 5px;
+    
+}
+
+.container-responsive{
+    position: relative;
+    width: 1534px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container-responsive .card-responsive{
+    position: relative;
+    width: 300px;
+    height: 420px;
+    background: #fff;
+    margin: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 25px rgba(238, 238, 241, 0.2);
+    transition: 0.5s;
+}
+
+.container-responsive:hover .card-responsive{
+    filter: blur(20px);
+    transform: scale(0.9);
+    opacity: 0.5;
+}
+
+.container-responsive .card-responsive:hover {
+    filter: blur(0px);
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.container-responsive .card-responsive .circle-responsive{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    clip-path: circle(190px at center -100px);
+    text-align: center;
+}
+
+.container-responsive .card-responsive .circle-responsive img{
+    flex: 1;
+    align-self: center;
+    text-align: left;
+    position: relative;
+    max-width: 25%;
+    border: 2px;
+    margin-top:5px;
+    border-radius: 30%;
+    background-color: #fff;
+}
+
+.container-responsive .card-responsive .content-responsive{
+    position: absolute;
+    bottom: 0px;
+    padding: 10px;
+    text-align: center;
+}
+
+.container-responsive .card-responsive .content-responsive h2,h3{
+    color: #655;
+    font-size: 1.5em;
+    padding: 15px 0;
+}
+
+.container-responsive .card-responsive .content-responsive p{
+    color: #655;
+    text-align: justify;
+}
+
+.container-responsive .card-responsive .content-responsive .link{
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    background: #000;
+    color: #fff;
+    border-radius: 40px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.container-responsive .card-responsive:nth-child(1) .circle-responsive,
+.container-responsive .card-responsive:nth-child(1) .content-responsive .link
+{
+    background: #ffaf00;
+}
+
+.container-responsive .card-responsive:nth-child(2) .circle-responsive,
+.container-responsive .card-responsive:nth-child(2) .content-responsive .link
+{
+    background: #da2268;
+}
+
+.container-responsive .card-responsive:nth-child(3) .circle-responsive,
+.container-responsive .card-responsive:nth-child(3) .content-responsive .link
+{
+    background: #bb02ff;
+}
+
+.container-responsive .card-responsive:nth-child(4) .circle-responsive,
+.container-responsive .card-responsive:nth-child(4) .content-responsive .link
+{
+    background: #f4511e;
 }

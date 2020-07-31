@@ -12,6 +12,7 @@ import Random from './basic/Random'
 import Card from './Layout/Card'
 import Form from './Layout/Form'
 import FormPerfil from './Layout/FormPerfil'
+import ResponsiveCard from "./Layout/ResponsiveCard"
 
 export default _ =>
 
@@ -19,6 +20,11 @@ export default _ =>
         <h1>Fundamentos React 2</h1>
 
         <div className="geral">
+            <ResponsiveCard />
+                
+            <Card titulo="layout responsive">
+                <ResponsiveCard/>
+            </Card>
             <Card titulo="Formulário de Perfil">
                 <FormPerfil />
             </Card>

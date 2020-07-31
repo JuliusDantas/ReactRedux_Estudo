@@ -14,8 +14,3 @@ export default props => {
     )
 }
 
-{
-    /* React.Children.map(props.children, (child) => {
-                    return cloneElement(child, props)
-                }) */
-}
