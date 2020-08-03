@@ -74,7 +74,7 @@
     width: 1534px;
     padding: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -84,7 +84,7 @@
     width: 300px;
     height: 420px;
     background: #fff;
-    margin: 20px;
+    margin: 5px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 15px 25px rgba(238, 238, 241, 0.2);
@@ -92,9 +92,9 @@
 }
 
 .container-responsive:hover .card-responsive{
-    filter: blur(20px);
+    filter: blur(3px);
     transform: scale(0.9);
-    opacity: 0.5;
+    opacity: 0.9;
 }
 
 .container-responsive .card-responsive:hover {
@@ -176,4 +176,90 @@
 .container-responsive .card-responsive:nth-child(4) .content-responsive .link
 {
     background: #f4511e;
+}
+
+.container-slanted{
+    flex: 1;
+    background-color: #8e24aa;
+    min-height: rem-calc(300);
+    min-width: 100%;
+    transform: skewY(-3deg);
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+.container-slanted .content{
+    transform: skewY(3deg);
+    padding: 20px;
+}
+
+.hero{
+    background: url(../../img/dive_scuba.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 80vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero::before {
+    content:'';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #fff;
+    transform: skewY(10deg);
+    transform-origin: right;
+    top: 100%;
+    left: -50%;
+}
+
+.hero::after {
+    content:'';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #fff;
+    transform: skewY(-10deg);
+    transform-origin: left;
+    top: 100%;
+    right: -50%;
+}
+
+.slatend-box{
+    flex: 1;
+    background-color: #8e24aa;
+    box-shadow: 6px  6px 15px 0 #fff;
+    left: 50%;
+    max-width: 400px;
+    min-height: 160px;
+    position: relative;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.slatend-box .text{
+    flex: 0.7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    text-align: justify;
+    padding: 5px;
+    width: 80%;
+    padding-top: 5px;
+}
+
+.slatend-box .text strong{
+    font-weight: 400;
+    background: none;
+    color: #fff;
+}
+
+.slatend-box .image{
+    max-width: 40%;
+    flex: 1;
+    background: url(../../img/creditcard.jpg) no-repeat center center;
+    clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
+    background-size: cover;
 }

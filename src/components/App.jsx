@@ -13,6 +13,9 @@ import Card from './Layout/Card'
 import Form from './Layout/Form'
 import FormPerfil from './Layout/FormPerfil'
 import ResponsiveCard from "./Layout/ResponsiveCard"
+import Hero from './Layout/Hero'
+import SlantedBox from './Layout/SlantedBox'
+import Slider from './Layout/Slider'
 
 export default _ =>
 
@@ -20,8 +23,21 @@ export default _ =>
         <h1>Fundamentos React 2</h1>
 
         <div className="geral">
-            <ResponsiveCard />
-                
+            <Slider />
+            <Card titulo="Slider">
+                <Slider />
+            </Card>
+            <Card titulo="Slantend Box">
+                <SlantedBox />
+            </Card>
+            <Card titulo="Hero With Slanted">
+                <Hero />        
+            </Card>
+            <div className="container-slanted">
+                <div className="content">
+                    <ResponsiveCard />
+                </div>
+            </div>       
             <Card titulo="layout responsive">
                 <ResponsiveCard/>
             </Card>
