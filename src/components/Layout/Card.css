@@ -263,3 +263,92 @@
     clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
     background-size: cover;
 }
+
+.saibamais{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 10vh 10vh 30vh;
+    grid-template-areas: "t t"
+                         "st st"
+                         "main aside";
+
+    grid-gap: 5px;
+    background-color: #fff;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.saibamais .titulo{
+    background-color: pink !important;
+    grid-area: t;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.saibamais .stitulo{
+    background-color: darkorange !important;
+    grid-area: st;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.saibamais .main{
+    background: blue !important;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-areas: "ic ic"
+                         "tx tx";
+    grid-template-rows: 50% 50%;
+    grid-column: 1 / 1;
+}
+
+.saibamais .main .ic{
+    display: flex;
+    grid-area: ic;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.saibamais .main .tx{
+    display: flex;
+    grid-area: tx;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.saibamais .aside{
+    background: green !important;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-areas: "ica ica"
+                         "txa txa";
+    grid-template-rows: 50% 50%;
+    grid-column: 2 / 2;
+}
+.saibamais .aside .ica{
+    display: flex;
+    grid-area: ica;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.saibamais .aside .txa{
+    display: flex;
+    grid-area: txa;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.saibamais .rodape{
+    background: green !important;
+    grid-area: f;
+}

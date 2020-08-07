@@ -16,6 +16,7 @@ import ResponsiveCard from "./Layout/ResponsiveCard"
 import Hero from './Layout/Hero'
 import SlantedBox from './Layout/SlantedBox'
 import Slider from './Layout/Slider'
+import FlexGrid from './Layout/FlexGrid'
 
 export default _ =>
 
@@ -23,7 +24,9 @@ export default _ =>
         <h1>Fundamentos React 2</h1>
 
         <div className="geral">
-            <Slider />
+            <Card titulo="Flex Grid">
+                <FlexGrid />
+            </Card>
             <Card titulo="Slider">
                 <Slider />
             </Card>
